@@ -15,6 +15,13 @@ class HomeController extends BaseController {
 	|
 	*/
 
+    private $userRepository;
+
+    public function __construct(UserRepositoryInterface $userRepository)
+    {
+        $this->userRepository = $userRepository;
+    }
+
 	public function showWelcome()
 	{
 		return View::make('hello');
