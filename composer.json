@@ -9,8 +9,8 @@
 	"autoload": {
 		"classmap": [
 			"app/commands",
-			"app/controllers",
-			"app/models",
+			"app/classes/controllers",
+			"app/classes/models",
 			"app/database/migrations",
 			"app/database/seeds",
 			"app/tests/TestCase.php"
