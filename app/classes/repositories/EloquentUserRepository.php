@@ -13,11 +13,11 @@ class EloquentUserRepository implements UserRepositoryInterface
 
     public function readAll()
     {
-        // TODO: Implement readAll() method.
+        return $this->user->all();
     }
 
     public function create(Array $attributes)
     {
-        // TODO: Implement create() method.
+        return $this->user->create($attributes);
     }
 }
